@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="water-display">
+        <div class="dark-transparent">
+            <img src="assets/diving-logo.png" alt="Photo of Diver">
+            <h1>SwimCamp</h1>
+        </div>
+        <p class="reference">Photo by <a href="https://unsplash.com/@artmilitonian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Artem Militonian</a> on <a href="https://unsplash.com/photos/blue-ocean-UYW6FZLlnL8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+    </div>
+    <div class="sign-up-form">
+        <h2>
+            Welcome to SwimCamp, where you have access to all the gear and 
+            equipment you need for swimming. Whether you are pursuing the sport 
+            competitively or for fun, this is the website for you. Sign up now 
+            to get started!
+        </h2>
+        <form action="swimcamp.com/account-successfully-created" method="post">
+            <div class="sign-up-form-details">
+                <h2>Let's do this!</h2>
+                <fieldset>
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name">
+
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name">
+                </fieldset>
+                <fieldset>
+                    <label for="user-email">EMAIL</label>
+                    <input type="email" id="user-email" name="user-email">
+
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" id="phone-number" name="phone-number">
+                </fieldset>
+                <fieldset>
+                    <label for="user-password">PASSWORD</label>
+                    <input type="password" id="user-password" name="user-password">
+
+                    <label for="confirm-user-password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-user-password" name="confirm-user-password">
+                </fieldset>
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
+    <p class="already-have-account">Already have an account? <a href="swimcamp.com/log-in-link-does-not-work-sorry">Log in</a></p>
+</body>
+</html>

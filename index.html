@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Sign-Up Form</title>
+    <title>SwimCamp Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,32 +18,44 @@
         <h2>
             Welcome to SwimCamp, where you have access to all the gear and 
             equipment you need for swimming. Whether you are pursuing the sport 
-            competitively or for fun, this is the website for you. Sign up now 
+            competitively or for fun, this is the website for you. Sign up <i>now</i> 
             to get started!
         </h2>
         <form action="swimcamp.com/account-successfully-created" method="post">
             <div class="sign-up-form-details">
                 <h2>Let's do this!</h2>
                 <fieldset>
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name">
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
 
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name">
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
                 </fieldset>
                 <fieldset>
-                    <label for="user-email">EMAIL</label>
-                    <input type="email" id="user-email" name="user-email">
+                    <div>
+                        <label for="user-email">EMAIL</label>
+                        <input type="email" id="user-email" name="user-email">
+                    </div>
 
-                    <label for="phone-number">PHONE NUMBER</label>
-                    <input type="tel" id="phone-number" name="phone-number">
+                    <div>
+                        <label for="phone-number">PHONE NUMBER (xxx-xxx-xxxx)</label>
+                        <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
                 </fieldset>
                 <fieldset>
-                    <label for="user-password">PASSWORD</label>
-                    <input type="password" id="user-password" name="user-password">
+                    <div>
+                        <label for="user-password">PASSWORD</label>
+                        <input type="password" id="user-password" name="user-password" required>
+                    </div>
 
-                    <label for="confirm-user-password">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-user-password" name="confirm-user-password">
+                    <div>
+                        <label for="confirm-user-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-user-password" name="confirm-user-password" required>
+                    </div>
                 </fieldset>
             </div>
             <button type="submit">Create Account</button>

@@ -10,20 +10,20 @@
 
 body {
     display: flex;
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Roboto', sans-serif;
 }
 
 img {
     width: auto;
     height: 100px;
-    /*border: 2px solid red;*/
 }
 
 h1 {
     font-family: Norse-Bold, sans-serif;
     color: white;
     font-size: 75px;
-    /*border: 2px solid red;*/
+    position: relative;
+    top: 9px;
 }
 
 .water-display {
@@ -58,31 +58,67 @@ h1 {
     flex-direction: column;
     justify-content: center;
     gap: 25px;
-    min-width: 600px;
 }
 
 .sign-up-form-details {
     background-color: white;
     padding-left: 30px;
-    padding-top: 10px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 35px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
+    box-shadow: 5px 4px 5px rgb(215, 215, 215),
+                5px 2px 5px rgb(215, 215, 215);
 }
 
-h2 {
-    font-size: 18px;
+.sign-up-form h2 {
+    font-size: 20px;
     padding-left: 30px;
     padding-right: 120px;
+    padding-bottom: 30px;
+    color: rgb(40, 40, 40);
 }
 
 .sign-up-form-details h2 {
     padding-left: 0;
+    padding-bottom: 0;
+    color: rgb(40, 40, 40);
 }
 
 fieldset {
     border: 0;
+    display: flex;
+    gap: 60px;
+}
+
+label {
+    display: block;
+    font-size: 11px;
+    color: rgb(80, 80, 80);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 3px;
+}
+
+input {
+    width: 225px;
+    height: 25px;
+    background-color: rgb(254, 254, 254);
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    padding-left: 7px;
+    line-height: 25px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(0, 98, 255);
+    box-shadow: 3px 3px 5px rgb(215, 215, 215);
 }
 
 button {

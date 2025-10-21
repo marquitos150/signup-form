@@ -8,6 +8,24 @@
     padding: 0;
 }
 
+/* custom properties for sign-up form */
+:root {
+    --form-gap: 25px;
+    --form-indent: 30px;
+    --form-background-color: rgb(247, 250, 251);
+
+    --header-color: rgb(40, 40, 40);
+    --label-color: rgb(80, 80, 80);
+    --box-shadow-color: rgb(215, 215, 215);
+    --btn-login-color: rgb(0, 170, 217);
+
+    --input-border-color: #E5E7EB;
+    --input-border-focus-color: rgb(0, 98, 255);
+    --input-background-color: rgb(254, 254, 254);
+
+    --font-weight-bold: bold;
+}
+
 body {
     display: flex;
     font-family: 'Roboto', sans-serif;
@@ -53,37 +71,37 @@ h1 {
 }
 
 .sign-up-form {
-    background-color: rgb(247, 250, 251);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 25px;
+    background-color: var(--form-background-color);
+    gap: var(--form-gap);
 }
 
 .sign-up-form-details {
     background-color: white;
-    padding-left: 30px;
+    padding-left: var(--form-indent);
     padding-top: 15px;
     padding-bottom: 35px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    box-shadow: 5px 4px 5px rgb(215, 215, 215),
-                5px 2px 5px rgb(215, 215, 215);
+    gap: var(--form-gap);
+    box-shadow: 5px 4px 5px var(--box-shadow-color),
+                5px 2px 5px var(--box-shadow-color);
 }
 
 .sign-up-form h2 {
     font-size: 20px;
-    padding-left: 30px;
+    padding-left: var(--form-indent);
     padding-right: 120px;
     padding-bottom: 30px;
-    color: rgb(40, 40, 40);
+    color: var(--header-color);
 }
 
 .sign-up-form-details h2 {
     padding-left: 0;
     padding-bottom: 0;
-    color: rgb(40, 40, 40);
+    color: var(--header-color);
 }
 
 fieldset {
@@ -95,8 +113,8 @@ fieldset {
 label {
     display: block;
     font-size: 11px;
-    color: rgb(80, 80, 80);
-    font-weight: bold;
+    color: var(--label-color);
+    font-weight: var(--font-weight-bold);
     letter-spacing: 1.5px;
     margin-bottom: 3px;
 }
@@ -104,8 +122,8 @@ label {
 input {
     width: 225px;
     height: 25px;
-    background-color: rgb(254, 254, 254);
-    border: 1px solid #E5E7EB;
+    background-color: var(--input-background-color);
+    border: 1px solid var(--input-border-color);
     border-radius: 4px;
     padding-left: 7px;
     line-height: 25px;
@@ -117,12 +135,13 @@ input:invalid {
 
 input:focus {
     outline: none;
-    border: 1px solid rgb(0, 98, 255);
-    box-shadow: 3px 3px 5px rgb(215, 215, 215);
+    border: 1px solid var(--input-border-focus-color);
+    box-shadow: 3px 3px 5px var(--box-shadow-color);
+    background-color: white;
 }
 
 button {
-    background-color: rgb(0, 170, 217);
+    background-color: var(--btn-login-color);
     color: white;
     padding: 12px 42px;
     font-size: 15px;
@@ -130,7 +149,8 @@ button {
     margin-top: 30px;
     border: none;
     border-radius: 8px;
-    box-shadow: 2px 5px 5px rgb(215, 215, 215);
+    box-shadow: 2px 5px 5px var(--box-shadow-color);
+    cursor: pointer;
 }
 
 .already-have-account {
@@ -139,7 +159,7 @@ button {
 }
 
 .already-have-account a {
-    color: rgb(0, 170, 217);
+    color: var(--btn-login-color);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
 }
